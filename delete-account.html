@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete Account &amp; Data — Running Tracker Partner</title>
+  <meta name="description" content="Request deletion of your Running Tracker Partner (PacePilot) account and associated cloud data.">
+  <meta name="theme-color" content="#06090b">
+  <meta property="og:title" content="Delete Account &amp; Data — Running Tracker Partner">
+  <meta property="og:description" content="How to request deletion of your Running Tracker Partner account and cloud data.">
+  <meta property="og:image" content="assets/app-1.jpg">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <script>if (/[?&]inapp=1/.test(location.search)) document.documentElement.classList.add("inapp");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/icon.png" alt="" width="36" height="36">Running Tracker Partner</a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.edapp.runningtracker" rel="noopener">Download</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Account</span>
+      <h1>Request Account and Data Deletion</h1>
+      <p class="updated">Running Tracker Partner (PacePilot) · Android package <code>com.edapp.runningtracker</code></p>
+    </div>
+  </section>
+
+  <div class="container legal-grid">
+    <aside class="toc" aria-label="On this page">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#what">What is deleted</a></li>
+        <li><a href="#local">Data on your phone</a></li>
+        <li><a href="#retained">What may be kept</a></li>
+        <li><a href="#process">What happens next</a></li>
+        <li><a href="#request">Submit a request</a></li>
+      </ul>
+    </aside>
+
+    <article class="prose">
+      <h2 id="overview">Overview</h2>
+      <p>You can request deletion of your Running Tracker Partner (PacePilot) account and associated cloud data using the form below or by emailing <a href="mailto:edwardsundarsingh12@gmail.com?subject=PacePilot%20Account%20Deletion%20Request">edwardsundarsingh12@gmail.com</a>.</p>
+      <div class="callout">
+        <p>Submitting a request does <b>not</b> delete your account or data immediately. Each request is reviewed and processed manually by the developer after confirming it comes from the account owner. You'll receive an email when deletion is complete.</p>
+      </div>
+      <p>You only have a cloud account if you signed in with Google in the app (Settings → Account &amp; backup). If you never signed in, all your data is on your phone only — see <a href="#local">Data on your phone</a>.</p>
+
+      <h2 id="what">What data is deleted</h2>
+      <p>A deletion request covers, as applicable:</p>
+      <ul>
+        <li>Your Firebase Authentication account information for Running Tracker Partner (Google account ID, email address and display name).</li>
+        <li>Cloud-backed running history and run summaries, including splits, best efforts, records and notes.</li>
+        <li>GPS route data stored in the cloud.</li>
+        <li>Other personal data linked to your account, subject to applicable legal requirements.</li>
+      </ul>
+
+      <h2 id="local">Data on your phone</h2>
+      <p>Runs stored locally on a device stay on that device until you delete them or uninstall the app. You can delete individual runs from a run's summary screen at any time. <b>Uninstalling the app does not delete your cloud data</b> — use this page to request that.</p>
+
+      <h2 id="retained">What may be kept</h2>
+      <ul>
+        <li>Records of Google Play purchases (product, purchase time and a hashed purchase token) may be retained where required for billing, tax, fraud-prevention or legal purposes. Payment details are never held by us — they're managed by Google Play.</li>
+        <li>The email conversation about your request is kept as a record that the request was handled.</li>
+        <li>Data held by Google itself (your Google account, Google Play purchase history, AdMob advertising data) is controlled by Google and managed in your Google account settings.</li>
+      </ul>
+
+      <h2 id="process">What happens next</h2>
+      <ul>
+        <li>We receive your request by email.</li>
+        <li>We reply to the account email to confirm the request came from you. We'll never ask for your password.</li>
+        <li>After confirmation we delete the account data listed above and email you once it's done.</li>
+      </ul>
+
+      <h2 id="request">Submit a deletion request</h2>
+      <form id="delete-form" class="form" novalidate>
+        <div class="field">
+          <label for="email">Email address associated with your account <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <p class="field-error" id="email-error" hidden>Please enter a valid email address.</p>
+        </div>
+        <div class="field">
+          <label for="google_email">Google account email, if different <span class="opt">(optional)</span></label>
+          <input id="google_email" name="google_email" type="email" autocomplete="off" placeholder="name@gmail.com">
+          <p class="field-error" id="google-error" hidden>Please enter a valid email address or leave this empty.</p>
+        </div>
+        <div class="field">
+          <label for="details">Additional details <span class="opt">(optional)</span></label>
+          <textarea id="details" name="details" rows="4" maxlength="2000" placeholder="Anything that helps us find your account"></textarea>
+        </div>
+        <!-- Honeypot: humans never see or fill this -->
+        <div class="hp" aria-hidden="true">
+          <label for="website">Leave this empty</label>
+          <input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="check-field">
+          <input id="confirm" name="confirm" type="checkbox" required>
+          <span>I am requesting deletion of my Running Tracker Partner (PacePilot) account and associated data.</span>
+        </label>
+        <p class="field-error" id="confirm-error" hidden>Please tick the box to confirm your request.</p>
+        <p class="form-note">Never enter a password. We will only contact you at the email above.</p>
+        <button class="btn btn-primary" type="submit" id="submit-btn">Submit Deletion Request</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-bottom">
+      <span>&copy; <span data-year>2026</span> Running Tracker Partner</span>
+      <span><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+(function () {
+  "use strict";
+  // FormSubmit AJAX endpoint (HTTPS). Replace the email with the random alias FormSubmit
+  // gives you after activation to keep the address out of the page source.
+  const ENDPOINT = "https://formsubmit.co/ajax/edwardsundarsingh12@gmail.com";
+  const SUPPORT = "edwardsundarsingh12@gmail.com";
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const MIN_FILL_MS = 3000; // bots submit instantly
+  const openedAt = Date.now();
+
+  const form = document.getElementById("delete-form");
+  const btn = document.getElementById("submit-btn");
+  const status = document.getElementById("form-status");
+  const email = document.getElementById("email");
+  const gEmail = document.getElementById("google_email");
+  const details = document.getElementById("details");
+  const confirmBox = document.getElementById("confirm");
+  const honey = document.getElementById("website");
+
+  function show(el, on) { el.hidden = !on; }
+
+  function setStatus(kind, html) {
+    status.className = "form-status " + kind;
+    status.innerHTML = html;
+    status.hidden = false;
+    status.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  function mailtoLink(body) {
+    return "mailto:" + SUPPORT + "?subject=" + encodeURIComponent("PacePilot Account Deletion Request") +
+      "&body=" + encodeURIComponent(body);
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const em = email.value.trim();
+    const ge = gEmail.value.trim();
+    const emailOk = EMAIL_RE.test(em);
+    const geOk = !ge || EMAIL_RE.test(ge);
+    show(document.getElementById("email-error"), !emailOk);
+    show(document.getElementById("google-error"), !geOk);
+    show(document.getElementById("confirm-error"), !confirmBox.checked);
+    email.setAttribute("aria-invalid", String(!emailOk));
+    gEmail.setAttribute("aria-invalid", String(!geOk));
+    if (!emailOk) { email.focus(); return; }
+    if (!geOk) { gEmail.focus(); return; }
+    if (!confirmBox.checked) { confirmBox.focus(); return; }
+
+    // Silently drop obvious bots without contacting the service.
+    if (honey.value || Date.now() - openedAt < MIN_FILL_MS) {
+      setStatus("error", "Your request couldn't be sent. Please wait a moment and try again.");
+      return;
+    }
+
+    const submittedAt = new Date().toISOString();
+    const summary =
+      "App: Running Tracker Partner (PacePilot)\n" +
+      "Account email: " + em + "\n" +
+      "Google account email: " + (ge || "(same / not provided)") + "\n" +
+      "Details: " + (details.value.trim() || "(none)") + "\n" +
+      "Submitted: " + submittedAt;
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    status.hidden = true;
+
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: "PacePilot Account Deletion Request",
+          _template: "table",
+          _captcha: "false",
+          _replyto: em,
+          _honey: honey.value,
+          "App": "Running Tracker Partner (PacePilot) — com.edapp.runningtracker",
+          "Account email": em,
+          "Google account email": ge || "(same / not provided)",
+          "Additional details": details.value.trim() || "(none)",
+          "Submitted at (UTC)": submittedAt,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      // FormSubmit returns { success: "true" } only when the email was accepted for delivery.
+      if (res.ok && String(data.success) === "true") {
+        form.reset();
+        setStatus("ok",
+          "<b>Request received.</b> Your deletion request has been sent to the developer. " +
+          "Your account and data have <b>not</b> been deleted yet — we'll reply to <b>" +
+          em.replace(/[<>&"]/g, "") + "</b> to verify the request before deleting anything.");
+      } else {
+        throw new Error(data.message || "Submission was not accepted");
+      }
+    } catch (err) {
+      setStatus("error",
+        "<b>Your request could not be sent.</b> Nothing was submitted. Please try again later, or " +
+        "<a href=\"" + mailtoLink(summary) + "\">email your request to " + SUPPORT + "</a> directly.");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Submit Deletion Request";
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -16,5 +16,9 @@ Open http://localhost:8080. Append `?inapp=1` to any page to see the in-app WebV
 - Colours: tokens in `:root` at the top of `styles.css`.
 - New release: copy an `<article class="release">` block at the top of the timeline in `whats-new.html`.
 
+## Account deletion form
+`delete-account.html` posts to FormSubmit (`https://formsubmit.co/ajax/<email>`), which emails the request. The page shows success only when FormSubmit answers `success: "true"`.
+The first submission triggers a FormSubmit **activation email**; click it once or nothing is delivered. After activating, you can swap the email in `ENDPOINT` for the random alias FormSubmit gives you.
+
 ## Deploy
 GitHub Pages serves the `main` branch root (Settings → Pages → Deploy from a branch). Pushing to `main` redeploys.

@@ -692,3 +692,48 @@ footer {
 .inapp footer { display: none; }
 .inapp .page-hero { padding-top: 28px; }
 .inapp .toc { top: 24px; }
+
+/* ---------- Forms (account deletion) ---------- */
+.form {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(20px, 4vw, 30px);
+}
+.field { display: grid; gap: 8px; }
+.field label { font-weight: 600; font-size: 0.95rem; }
+.field .opt { color: var(--faint); font-weight: 400; }
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.97rem;
+}
+.field textarea { resize: vertical; min-height: 110px; }
+.field input:focus,
+.field textarea:focus { outline: 2px solid var(--primary-deep); border-color: transparent; }
+.field input[aria-invalid="true"] { border-color: #f87171; }
+.field-error { color: #f87171; font-size: 0.88rem; }
+.prose .field-error { color: #f87171; font-size: 0.88rem; }
+.check-field { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; }
+.check-field input { width: 20px; height: 20px; margin-top: 3px; flex: none; accent-color: var(--primary); }
+.check-field span { color: var(--text); font-size: 0.95rem; }
+.prose .form-note { color: var(--faint); font-size: 0.88rem; }
+.form .btn { justify-self: start; }
+.form .btn:disabled { opacity: 0.6; cursor: progress; transform: none; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-status {
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: 0.95rem;
+}
+.form-status.ok { background: rgba(0, 212, 170, 0.1); border: 1px solid rgba(0, 212, 170, 0.35); color: var(--text); }
+.form-status.error { background: rgba(248, 113, 113, 0.1); border: 1px solid rgba(248, 113, 113, 0.4); color: var(--text); }
