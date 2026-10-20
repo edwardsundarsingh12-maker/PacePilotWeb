@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Running Tracker Partner</title>
+  <meta name="description" content="How Running Tracker Partner handles your location, runs, account and advertising data.">
+  <meta name="theme-color" content="#06090b">
+  <meta property="og:title" content="Privacy Policy — Running Tracker Partner">
+  <meta property="og:description" content="Runs stay on your phone. Cloud backup is optional. No data is sold.">
+  <meta property="og:image" content="assets/app-1.jpg">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <script>if (/[?&]inapp=1/.test(location.search)) document.documentElement.classList.add("inapp");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img src="assets/icon.png" alt="" width="36" height="36">Running Tracker Partner</a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="whats-new.html">What's New</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.pacepilot.app" rel="noopener">Download</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 20 October 2026</p>
+    </div>
+  </section>
+
+  <div class="container legal-grid">
+    <aside class="toc" aria-label="On this page">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#on-device">Data on your device</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#account">Google sign-in &amp; backup</a></li>
+        <li><a href="#purchases">Purchases</a></li>
+        <li><a href="#ads">Advertising</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#sharing">Sharing &amp; selling</a></li>
+        <li><a href="#retention">Retention &amp; deletion</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <article class="prose">
+      <h2 id="summary">Summary</h2>
+      <div class="callout">
+        <p>No account is required. Your runs, routes and records are stored on your phone. Only if you choose to sign in with Google is each finished run backed up to your private cloud space. We don't sell personal data, and you can export or delete your runs at any time.</p>
+      </div>
+      <p>This policy explains how the Running Tracker Partner Android app ("the app", "we") handles information. It applies to the app published on Google Play under the package <code>com.pacepilot.app</code>.</p>
+
+      <h2 id="on-device">Data stored on your device</h2>
+      <p>The app keeps the following in a local database on your phone:</p>
+      <ul>
+        <li>Runs: start time, duration, distance, pace, splits, elevation, calorie estimate, best efforts, records broken, notes you write and the GPS route.</li>
+        <li>Personal records, including any custom distances you add.</li>
+        <li>Settings such as units, weekly goal, body weight (used only to estimate calories), voice coach and appearance preferences.</li>
+      </ul>
+      <p>Android's own device backup may include this data if you have it turned on in your phone's settings; that backup is handled by Google under your Google account.</p>
+
+      <h2 id="location">Location</h2>
+      <p>Precise location is used <b>only while you are recording a run</b>, to measure distance, pace, splits and your route. It is processed on your device. A foreground notification is shown for the whole time tracking is active. Location is not used for advertising and is not collected when you are not recording a run.</p>
+
+      <h2 id="account">Google sign-in &amp; cloud backup (optional)</h2>
+      <p>If you choose to sign in with Google, we use Firebase Authentication (by Google) to verify your account. We receive your Google account's unique ID, email address and display name.</p>
+      <p>While you are signed in, each finished run — its summary, notes, splits, best efforts, records broken and GPS route — is uploaded to Google Cloud Firestore under your account so it can be restored on another phone. Security rules limit these documents to your account. Signing out stops the backup and keeps all runs on your phone.</p>
+
+      <h2 id="purchases">Purchases</h2>
+      <p>Pro is bought through Google Play Billing; we never see your payment details. To restore Pro on your other devices, we store the product, purchase time and a <b>hashed</b> purchase token (the raw token is never stored) under your signed-in account.</p>
+
+      <h2 id="ads">Advertising</h2>
+      <p>Free users see a banner ad and may choose to watch a rewarded ad. Ads are provided by Google AdMob, which may collect device identifiers (such as the advertising ID), IP address and ad-interaction data to serve and measure ads, as described in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google's policy</a>. You can reset or opt out of personalised ads in your Android settings. Pro users and users in the first-launch trial don't receive ads.</p>
+
+      <h2 id="permissions">Permissions</h2>
+      <ul>
+        <li><b>Location (precise and approximate)</b> — to track your run.</li>
+        <li><b>Foreground service (location)</b> — to keep tracking with the screen off.</li>
+        <li><b>Notifications</b> — to show live run stats while tracking.</li>
+        <li><b>Internet / network state</b> — for optional backup, purchases and ads.</li>
+        <li><b>Wake lock / vibrate</b> — to keep tracking reliable and give haptic feedback on new records.</li>
+      </ul>
+
+      <h2 id="sharing">Sharing &amp; selling</h2>
+      <p>We do not sell personal data. Data is processed only by the services named above (Google Firebase, Google Play Billing, Google AdMob) to provide the app. We may disclose information if required by law.</p>
+
+      <h2 id="retention">Retention &amp; deletion</h2>
+      <ul>
+        <li>Delete any run from its summary screen. If you are signed in, the deletion is also recorded in your backup so the run does not return.</li>
+        <li>Export every run to a JSON file from Settings → Data at any time.</li>
+        <li>Uninstalling the app removes all local data.</li>
+        <li>To delete your cloud backup and account data entirely, email us from the address on your account and we will delete it within 30 days.</li>
+      </ul>
+
+      <h2 id="security">Security</h2>
+      <p>Data in transit to Google's services is encrypted with TLS. Cloud data is protected by Firebase security rules tied to your account. No method of storage or transmission is completely secure, but we take reasonable measures to protect your information.</p>
+
+      <h2 id="children">Children</h2>
+      <p>The app is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
+
+      <h2 id="changes">Changes to this policy</h2>
+      <p>We may update this policy. The "Last updated" date above will change, and significant changes will be noted on the <a href="whats-new.html">What's New</a> page.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Questions or requests: <a href="mailto:edwardsundarsingh12@gmail.com">edwardsundarsingh12@gmail.com</a></p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-bottom">
+      <span>&copy; <span data-year>2026</span> Running Tracker Partner</span>
+      <span><a href="index.html">Home</a> · <a href="terms.html">Terms</a> · <a href="whats-new.html">What's New</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
